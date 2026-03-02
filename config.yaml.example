@@ -1,0 +1,35 @@
+# ─── LLM-модели ─────────────────────────────────────────
+# Скопируйте этот файл как config.yaml и заполните своими значениями:
+#   cp config.yaml.example config.yaml
+#
+# config.yaml добавлен в .gitignore и не будет загружен в репозиторий.
+
+# Модель по умолчанию для чат-бота (ключ из секции models)
+default_model: qwen3-32b
+
+models:
+  # Qwen3-32B-AWQ  ·  контекст ~40K
+  qwen3-32b:
+    name: Qwen/Qwen3-32B-AWQ
+    base_url: http://your-server:8081/v1
+    api_key: none                   # "none" если ключ не требуется
+    context_window: 40000
+
+  # Qwen3-30B-A3B (GGUF)  ·  контекст ~131K
+  qwen3-30b:
+    name: /models/Qwen3-30B-A3B-Q5_K_M.gguf
+    base_url: http://your-server:8081/v1
+    api_key: none
+    context_window: 131000
+
+# ─── Embedding-модель ───────────────────────────────────
+embedding:
+  name: deepvk/USER-bge-m3
+  base_url: http://your-server:8080/v1
+  api_key: none
+
+# ─── Voice (Whisper) ────────────────────────────────────
+voice:
+  name: openai/whisper-large-v3-turbo
+  http_url: https://your-server:8083
+  ws_url: wss://your-server:8084
