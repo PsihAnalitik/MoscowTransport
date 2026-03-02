@@ -6,3 +6,5 @@ config.yaml
 
 # Логи LLM-вызовов
 logs/
+
+tests/

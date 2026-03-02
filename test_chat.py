@@ -97,7 +97,7 @@ def run_tests(questions: list[str], client, model: str, output_csv: str):
 
 def main():
     parser = argparse.ArgumentParser(description="Test chatbot with questions from file")
-    parser.add_argument("--file", default=os.path.join(ROOT_DIR, "test_questions.txt"),
+    parser.add_argument("--file", default=os.path.join(ROOT_DIR, "tests/test_questions.txt"),
                         help="Path to questions file (default: test_questions.txt)")
     parser.add_argument("--model", default=None,
                         help="Model key from config.yaml (default: default_model)")
