@@ -7,4 +7,7 @@ config.yaml
 # Логи LLM-вызовов
 logs/
 
-tests/
+# Временные файлы Excel
+tests/~$*
+*.xlsx
+~$*

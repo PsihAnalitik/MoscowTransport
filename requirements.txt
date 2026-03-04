@@ -7,3 +7,4 @@ jupyter
 statsmodels
 openai
 pyyaml
+openpyxl

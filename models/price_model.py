@@ -10,7 +10,7 @@ class PriceMA(BaseTSModel):
         return self
 
     def predict_one_point(self, history):
-        return history.iloc[-8:].mean()
+        return history.iloc[-self.historic_points:].mean()
 
 # ═══ Актуальная модель ═══════════════════════════════════
 # Меняете здесь — меняется везде, где используется Price

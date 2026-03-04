@@ -21,15 +21,3 @@ models:
     base_url: http://your-server:8081/v1
     api_key: none
     context_window: 131000
-
-# ─── Embedding-модель ───────────────────────────────────
-embedding:
-  name: deepvk/USER-bge-m3
-  base_url: http://your-server:8080/v1
-  api_key: none
-
-# ─── Voice (Whisper) ────────────────────────────────────
-voice:
-  name: openai/whisper-large-v3-turbo
-  http_url: https://your-server:8083
-  ws_url: wss://your-server:8084
